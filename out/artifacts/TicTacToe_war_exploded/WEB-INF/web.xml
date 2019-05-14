@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>awalServlet</servlet-name>
+        <servlet-class>tic.tac.toe.servlet.awalServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>morpionServlet</servlet-name>
+        <servlet-class>tic.tac.toe.servlet.morpionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>awalServlet</servlet-name>
+        <url-pattern>/awalServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>morpionServlet</servlet-name>
+        <url-pattern>/morpionServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
