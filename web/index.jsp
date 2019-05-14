@@ -17,10 +17,10 @@
 <body>
 <h1>Tic Tac Toe</h1>
 <form action="awalServlet" method="post">
-  Grid Size: <input type = "number" min="2" step="1" name = "Ubin" required="required">
-  <br /><br /><br />
-  <input type="submit" name="Pemain" value="Saya mulai..."><br/>
-  <input type="submit" name="Komputer" value="Komputer mulai...">
+  <h1>Jumlah ubin:  <input type = "number" min="2" step="1" name = "Ubin" required="required" style="font-size : 20px; width: 60px; height: 30px;"> </h1>
+  <br />
+  <input type="submit" name="Pemain" value="Saya mulai..." style="font-size : 20px; width: 150px; height: 50px;"><br/><br/>
+  <input type="submit" name="Komputer" value="Komputer mulai..." style="font-size : 20px; width: 200px; height: 50px;">
 </form>
 
 <script type="text/javascript">
